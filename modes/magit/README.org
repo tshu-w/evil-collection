@@ -11,31 +11,32 @@
 
 * Recent Changes (most recent first)
 
-  1. [2019-09-04] Don't use =evil-next-visual-line= and
+  1. [2021-01-15] Added =magit-log-select-mode= keybindings.
+  2. [2019-09-04] Don't use =evil-next-visual-line= and
      =evil=previous-visual-line=. See [[https://github.com/emacs-evil/evil-magit/issues/70][Issue #70]].
-  1. [2019-06-16] Added =evil-collection-magit-stage-untracked-file-with-intent= at
+  3. [2019-06-16] Added =evil-collection-magit-stage-untracked-file-with-intent= at
      =I=. See [[https://github.com/emacs-evil/evil-magit/issues/67][Issue #67]].
-  2. [2019-02-15] Added =forge-dispatch= at =@=.
-  3. [2018-05-22] Added =evil-collection-magit-use-z-for-folds=. See docstring for more
+  4. [2019-02-15] Added =forge-dispatch= at =@=.
+  5. [2018-05-22] Added =evil-collection-magit-use-z-for-folds=. See docstring for more
      information.
-  4. [2018-03-13] Added basic evil support for =magit-list-repositories=.
-  5. [2016-07-27] Moved submodules popup to ' and added the new subtree popup at
+  6. [2018-03-13] Added basic evil support for =magit-list-repositories=.
+  7. [2016-07-27] Moved submodules popup to ' and added the new subtree popup at
      ". This is not mnemonic in any way but easy to reach and keeps the two keys
      together.
-  6. [2016-03-24] Moved =magit-diff-less-context= to = to fix conflict with
+  8. [2016-03-24] Moved =magit-diff-less-context= to = to fix conflict with
      moved revert.
-  7. [2016-03-21] Moved revert commands from =o= and =O= to =-= and
+  9. [2016-03-21] Moved revert commands from =o= and =O= to =-= and
      =_=. Rationale is that you are subtracting a commit. This makes room for
      =o= and =O= to be reset and the new reset popup command. Think of resetting
      to an "old" state. =¯\_(ツ)_/¯=
-  8. Added =evil-collection-magit-want-horizontal-movement=. Use =h= and =l= for movement
-     like vim, moving =h= to =H=, =l= to =L=, and =L= to =C-l=.
-  9. Added =evil-collection-magit-toggle-text-mode= on =C-t=. This is a quick way to enter
-     text mode in a magit buffer, which allows arbitrary movement, copying, etc.
-     Use =C-t= to return to the previous magit mode.
-  10. When =evil-collection-magit-use-y-for-yank= is non nil, =C-w= will prefix the evil
+  10. Added =evil-collection-magit-want-horizontal-movement=. Use =h= and =l= for movement
+      like vim, moving =h= to =H=, =l= to =L=, and =L= to =C-l=.
+  11. Added =evil-collection-magit-toggle-text-mode= on =C-t=. This is a quick way to enter
+      text mode in a magit buffer, which allows arbitrary movement, copying, etc.
+      Use =C-t= to return to the previous magit mode.
+  12. When =evil-collection-magit-use-y-for-yank= is non nil, =C-w= will prefix the evil
       window switching functions from magit buffers.
-  11. =evil-collection-magit-use-y-for-yank= is now the default. It has worked well for me so
+  13. =evil-collection-magit-use-y-for-yank= is now the default. It has worked well for me so
       far, and I've had good feedback, but please let me know if you see issues.
       You can use the original behavior with =(setq evil-collection-magit-use-y-for-yank
       nil)=. See the table below for a summary of differences.
